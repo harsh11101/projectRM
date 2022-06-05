@@ -21,7 +21,7 @@ async function getData(){
     const endpoint = "https://fair-squirrel-48.hasura.app/v1/graphql";
     const headers = {
         "content-type": "application/json",
-        "x-hasura-admin-secret": "pWD016uZJjGDoWAnciCSjZMjVZjUce3IS1vUmQX3hu2nY1SF9OxCIFGSfCV5VXpx"
+        "x-hasura-admin-secret": "<admin-key>"
     };
     const values = {
         "operationName": "getvalues",
@@ -100,7 +100,7 @@ async function addData(key,value){
     const endpoint = "https://fair-squirrel-48.hasura.app/v1/graphql";
     const headers = {
         "content-type": "application/json",
-        "x-hasura-admin-secret": "pWD016uZJjGDoWAnciCSjZMjVZjUce3IS1vUmQX3hu2nY1SF9OxCIFGSfCV5VXpx"
+        "x-hasura-admin-secret": "<admin-key>"
     };
     const values = {
         "operationName": "addvalues",
@@ -179,7 +179,7 @@ async function deleteData(key){
     const endpoint = "https://fair-squirrel-48.hasura.app/v1/graphql";
     const headers = {
         "content-type": "application/json",
-        "x-hasura-admin-secret": "pWD016uZJjGDoWAnciCSjZMjVZjUce3IS1vUmQX3hu2nY1SF9OxCIFGSfCV5VXpx"
+        "x-hasura-admin-secret": "<admin-key>"
     };
     const values = {
         "operationName": "deletevalues",
