@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "fill-my-form",
+    "short_name": "FMF",
+    "description": "Fills google forms for you based on predefined parameters by the user.",
+    "version": "0.0.1",
+    "background": {
+        "service_worker": "/background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Fill-My-Form"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "/content.js"
+            ]
+        }
+    ]
+}
